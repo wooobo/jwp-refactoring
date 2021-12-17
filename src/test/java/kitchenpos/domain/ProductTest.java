@@ -11,7 +11,7 @@ class ProductTest {
 
     @Test
     @DisplayName("상품의 가격은 0원 미만(음수)이면 상품을 등록 할 수 없다.")
-    void 상품_가격이_음수인경우_실패한다() {
+    void 상품_가격이_음수인경우_등록할_수_없다() {
         assertThatExceptionOfType(InvalidParameterException.class).isThrownBy(() -> {
             new Product("치킨", -1000);
         }).withMessageContaining("0보다 작을 수 없습니다.");

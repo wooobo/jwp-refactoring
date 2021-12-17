@@ -9,7 +9,7 @@ public class Price {
     public static final String LESS_THAN_RANGE_EXCEPTION = "가격은 %s보다 작을 수 없습니다.";
     public static final String NULL_EXCEPTION = "가격은 필수 입력해야 합니다.";
 
-    private static final BigDecimal MIN = BigDecimal.ZERO;
+    public static final BigDecimal ZERO = BigDecimal.ZERO;
 
     private BigDecimal value;
 
@@ -35,9 +35,9 @@ public class Price {
             throw new IllegalArgumentException(NULL_EXCEPTION);
         }
 
-        if (price.compareTo(MIN) < 0) {
+        if (price.compareTo(ZERO) < 0) {
             throw new InvalidParameterException(
-                String.format(LESS_THAN_RANGE_EXCEPTION, MIN.intValue()));
+                String.format(LESS_THAN_RANGE_EXCEPTION, ZERO.intValue()));
         }
     }
 
