@@ -1,8 +1,8 @@
 package kitchenpos.application.fixture;
 
 import java.util.List;
-import kitchenpos.domain.order.OrderTable;
-import kitchenpos.domain.order.TableGroup;
+import kitchenpos.domain.OrderTable;
+import kitchenpos.domain.TableGroup;
 
 public class TableGroupFixture {
 

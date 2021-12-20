@@ -7,7 +7,7 @@ import static org.mockito.Mockito.when;
 import java.util.Collections;
 import java.util.List;
 import kitchenpos.dao.MenuGroupDao;
-import kitchenpos.domain.menu.MenuGroup;
+import kitchenpos.domain.MenuGroup;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
